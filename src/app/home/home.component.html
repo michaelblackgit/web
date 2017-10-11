@@ -1,0 +1,41 @@
+<router-outlet></router-outlet>
+
+<style>
+.parallax {
+    background-image: url("https://homesmart.com/u/hs0051/headerimages/hd_68_1457724971.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome {
+  position: absolute;
+  top: 90%;
+  left: 47%;
+  color: white;
+
+}
+</style>
+<div class="parallax" (click)="scrollDown()">
+  <h1 class="welcome">▼▼▼</h1>
+</div>
+
+<div class="container" style="padding-top:30%" id="info">
+  <table style="width:100%">
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>
+    <h1>Michael Black is a software engineer,</h1>
+    <h1>an artist, and a writer. He was born</h1>
+    <h1>in Long Beach, California and obtained</h1>
+    <h1>his bachelor's degree in computer</h1>
+    <h1>science at CSULB.</h1>
+    </td>
+    <td><img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13082590_1778928349002348_3221233093680571313_n.jpg?oh=4167b1b82d2bb6c9fa4d492c5612690e&oe=5A78BECE" style="width:500px;height:500px;"></td>
+  </tr>
+</table>
+</div>

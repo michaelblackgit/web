@@ -1,0 +1,26 @@
+<style>
+  .navbar {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+</style>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" (click)="gotoHome()">Michael Black</a>
+        </div>
+        <div class="collapse navbar-collapse" [ngClass]="{ 'in': isIn }">
+        <ul class="nav navbar-nav">
+            <li><a (click)="gotoDevelopment()">Development</a></li>
+            <li><a (click)="gotoContact()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
